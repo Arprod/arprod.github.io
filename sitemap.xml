@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.arprod.eu/en/works/photos/</loc>
+    <loc>https://arprod.github.io/en/works/photos/</loc>
   </url><url>
-    <loc>https://www.arprod.eu/en/works/videos/</loc>
+    <loc>https://arprod.github.io/en/works/videos/</loc>
   </url><url>
-    <loc>https://www.arprod.eu/</loc>
+    <loc>https://arprod.github.io/</loc>
   </url><url>
-    <loc>https://www.arprod.eu/categories/</loc>
+    <loc>https://arprod.github.io/categories/</loc>
   </url><url>
-    <loc>https://www.arprod.eu/en/</loc>
+    <loc>https://arprod.github.io/en/</loc>
   </url><url>
-    <loc>https://www.arprod.eu/tags/</loc>
+    <loc>https://arprod.github.io/tags/</loc>
   </url>
 </urlset>
