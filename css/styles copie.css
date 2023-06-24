@@ -11621,7 +11621,6 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
@@ -11642,198 +11641,122 @@ body {
 }
 
 
+.about-section .container {
+  position: relative;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
 .about-section .card {
-  width: 900px;
-  margin: auto;
-  overflow-y: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.card:nth-child(odd) {
+  flex-direction: row;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.card:nth-child(even) .imgBx {
+  left: -25px;
+}
+
+.card .imgBx {
+  position: relative;
+  left: 25px;
+  width: 500px;
+  height: 300px;
   z-index: 1;
-  overflow-x: hidden;
-  display: flex;
-  transition: 0.3s;
-  flex-direction: column;
 }
 
-.card[data-state="#ab"] {
-  height: 600px;
-}
-.card[data-state="#ab"] .card-main {
-  padding-top: 0;
-}
-
-.card[data-state="#agent"] {
-  height: 550px;
-}
-
-.card[data-state="#prod"] {
-  height: 550px;
-}
-
-.card.is-active .card-header {
-  height: 80px;
-}
-.card.is-active .card-cover {
-  height: 100px;
-  top: -50px;
-}
-.card.is-active .card-avatar {
-  transform: none;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  bottom: 10px;
-}
-.card.is-active .card-fullname,
-.card.is-active .card-jobtitle {
-  left: 86px;
-  transform: none;
-}
-.card.is-active .card-fullname {
-  bottom: 18px;
-  font-size: 19px;
-}
-.card.is-active .card-jobtitle {
-  bottom: 16px;
-  letter-spacing: 1px;
-  font-size: 10px;
-}
-
-.card-header {
-  position: relative;
-  display: flex;
-  height: 200px;
-  flex-shrink: 0;
-  width: 100%;
-  transition: 0.3s;
-}
-.card-header * {
-  transition: 0.3s;
-}
-
-.card-cover {
-  width: 100%;
+.card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  position: absolute;
-  height: 160px;
-  top: -20%;
-  left: 0;
-  will-change: top;
-  background-size: cover;
-  background-position: center;
-  filter: blur(30px);
-  transform: scale(1.2);
-  transition: 0.5s;
+  width: 100%;
+  object-fit: cover;
 }
 
-.card-avatar {
-  width: 100px;
-  height: 100px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-64px);
-}
-
-.card-fullname {
-  position: absolute;
-  bottom: 0;
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
-  transform: translateY(-10px) translateX(-50%);
-  left: 50%;
-}
-
-.card-main {
+.card .contentBx {
   position: relative;
-  flex: 1;
+  right: 25px;
+  width: 500px;
+  height: 300px;
+  background: #000;
+  color: #fff;
   display: flex;
-  padding-top: 10px;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px 20px 100px;
 }
 
-.card-subtitle {
-  font-weight: 700;
-  font-size: 13px;
-  margin-bottom: 8px;
+.card:nth-child(even) .contentBx {
+  right: -25px;
+  padding: 20px 100px 20px 60px;
 }
 
-.card-content {
-  padding: 20px;
-}
-
-.card-desc {
-  line-height: 1.6;
-  color: #636b6f;
-  font-size: 15px;
-  margin: 0;
-  font-weight: 400;
-}
-
-.card-buttons {
-  display: flex;
-  background-color: #fff;
-  margin-top: auto;
-  position: sticky;
-  bottom: 0;
+.card .contentBx:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
   left: 0;
-}
-.card-buttons button {
-  flex: 1 1 auto;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: 0;
-  font-size: 13px;
-  border: 0;
-  padding: 15px 5px;
-  cursor: pointer;
-  color: #850606;
-  transition: 0.3s;
-  font-weight: 600;
-  outline: 0;
-  border-bottom: 3px solid transparent;
-}
-.card-buttons button.is-active, .card-buttons button:hover {
-  color: #64a19d;
-  border-bottom: 3px solid #64a19d;
-  background: linear-gradient(to bottom, rgba(127, 199, 231, 0) 0%, rgba(207, 204, 255, 0.2) 44%, rgba(211, 226, 255, 0.4) 100%);
+  right: 0;
+  background: #000;
+  z-index: -1;
 }
 
-.card-section {
-  display: none;
-}
-.card-section.is-active {
-  display: block;
-  -webkit-animation: fadeIn 0.6s both;
-          animation: fadeIn 0.6s both;
+.card .content h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(40px);
-  }
-  100% {
-    opacity: 1;
-  }
+.card .content p {
+  margin-top: 10px;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(40px);
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    max-width: 350px;
+    margin: 25px;
   }
-  100% {
-    opacity: 1;
+  
+  .card .imgBx {
+    width: 100%;
+    height: 250px;
+    left: 0;
+  }
+  
+  .card .contentBx {
+    width: 100%;
+    height: auto;
+    right: 0;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .card .contentBx:before {
+    top: 0;
+    bottom: 0;
+  }
+  
+  .card:nth-child(even) .imgBx {
+    left: 0;
+  }
+  
+  .card:nth-child(even) .contentBx {
+    right: 0;
+    padding: 30px;
   }
 }
 

@@ -60,41 +60,45 @@
         
         
         <section class="about-section text-center" id="about">
-            <div class="containerAb center">
-              <div class="ab">
-                <div class="imgBx">
-                  <img src="assets/img/img1.jpg" alt="img1">
-                </div>
-                <div class="contentBx">
-                  <div class="contentAb">
-                    <h2>About Us</h2>
-                    <p>Art Research Productions is a communication agency as well as an audiovisual production company established in 2011 and based in Sinaia, in the Romanian Carpathians.</p>
-                  </div>
-                </div>
+
+            <div class="card" data-state="#ab">
+              <div class="card-header">
+                <div class="card-cover" style="background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad)";></div>
+                <img class="card-avatar" src="assets/img/avatar.png" alt="avatar" />
+                <h1 class="card-fullname">Art Research Productions</h1>
               </div>
-              <div class="ab">
-                <div class="imgBx">
-                  <img src="assets/img/img2.jpg" alt="img2">
-                </div>
-                <div class="contentBx">
-                  <div class="contentAb">
-                    <h2>Agency</h2>
-                    <p>For better results, we've built our agency around the stages to enable you to successfully complete your creation.</p>
+              <div class="card-main">
+                <div class="card-section is-active" id="ab">
+                  <div class="card-content">
+                    <div class="card-subtitle">ABOUT US</div>
+                    <p class="card-desc" style="text-align: justify;">Art Research Productions is a communication agency as well as an audiovisual production company established in 2011 and based in Romanian. </br>ARP accompanies you in the development of your projects using mainly dramaturgy to which we add other tools such as communication and information sciences, systems theories, anthropology and many others. </br>Our intention is always to create a holistic approach to your needs, because at ARP we know that the search for meaning allows your projects to be anchored in reality in order to transfigure it all the more brilliantly! </br>Please note that we also have office in Paris.
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div class="ab">
-                <div class="imgBx">
-                  <img src="assets/img/img3.jpg" alt="img3">
-                </div>
-                <div class="contentBx">
-                  <div class="contentAb">
-                    <h2>Production</h2>
-                    <p>For us, it is clear that creativity and cost control are the keys to success!</p>
+                <div class="card-section" id="agent">
+                  <div class="card-content">
+                    <div class="card-subtitle">AGENCY</div>
+                    <p class="card-desc" style="text-align: justify;">For better results, we've built our agency around the stages to enable you to successfully complete your creation. </br>During your visit to our Creative Research Center, we work together to identify your specific needs through hands-on research. </br>Then, based on your stated goals, we design a strategy that fits your vision. At the same time, it is important to maintain viability by controlling estimated production costs throughout the process.
+                    </p>
                   </div>
+                </div>
+                <div class="card-section" id="prod">
+                  <div class="card-content">
+                    <div class="card-subtitle">PRODUCTION</div>
+                    <p class="card-desc" style="text-align: justify;">For us, it is clear that creativity and cost control are the keys to success! </br>Creativity does not equal budgetary extravagance, because being creative means being able to imagine the most possibilities according to the resources at your disposal. </br>The advantage of working with ARP is that costs are calculated in real time during the development of the project. </br>As producers, we will be able to build your project in line with your financial constraints. Cost control is one of the most important things for us, and in our opinion, it is the mark of great professionals.
+
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#ab" class="is-active">ABOUT</button>
+                  <button data-section="#agent">AGENCY</button>
+                  <button data-section="#prod">PRODUCTION</button>
                 </div>
               </div>
             </div>
+
         </section>
         
         
@@ -243,9 +247,9 @@
 <footer class="footer bg-black small text-center text-white-50">
 	<div class="container px-4 px-lg-5">
         <ul class="list-inline">
-            <li class="list-inline-item me-4"><a class="link-light text-white-50" href="#agency" target="">AGENCY</a></li>
+            <li class="list-inline-item me-4"><a class="link-light text-white-50" href="#agent" target="">AGENCY</a></li>
             <li class="list-inline-item me-4"></li>
-            <li class="list-inline-item"><a class="link-light text-white-50" href="#production" target="">PRODUCTION</a></li>
+            <li class="list-inline-item"><a class="link-light text-white-50" href="#prod" target="">PRODUCTION</a></li>
         </ul>
         <p class="text-muted mb-0">Copyright © 2023 Art Research Productions</p>
 	</div>
@@ -283,6 +287,8 @@ window.cookieconsent.initialise({
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://dimsemenov.com/plugins/royal-slider/royalslider/jquery.royalslider.min.js?v=9.3.6'></script>
+<script  src="./js/script-ab.js"></script>
 <script  src="./js/script-v.js"></script>
+
 </body>
 </html>

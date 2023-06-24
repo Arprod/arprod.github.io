@@ -23,6 +23,8 @@ text-transform:capitalize;
  .videoGallery .rsThumb.rsNavSelected {
 	 background-color: #64a19d;
 	 border-bottom: -color #64a19d;
+	 overflow-x: hidden;
+	 overflow-y: auto;	 
 }
  .sampleBlock {
 	 left: 3%;
