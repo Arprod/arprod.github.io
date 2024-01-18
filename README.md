@@ -1,4 +1,4 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&repeat=false&random=false&width=750&lines=Art+Research+Productions+-+Agency+%26+Production+of+audiovisual" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&repeat=true&random=false&width=750&lines=Art+Research+Productions+-+Agency+%26+Production+of+audiovisual" alt="Typing SVG" /></a>
 
 
 ![image](https://github.com/Arprod/arprod.github.io/blob/master/assets/img/V2-01.png)
